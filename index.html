@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Header Moderno con Logo -->
+        <div class="logo">
+            <h1>🎨 Mi Portafolio</h1>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">👤 Sobre Mí</a></li>
+                <li><a href="#projects">💼 Proyectos</a></li>
+                <li><a href="#video">🎥 Video</a></li>
+                <li><a href="#pdf-viewer">📄 Visor de PDF</a></li>
+                <li><a href="#spotify">🎵 Spotify</a></li>
+                <li><a href="#contact">✉️ Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección About -->
+    <section id="about">
+        <h2>👤 Sobre Mí</h2>
+        <p>Bienvenido a mi portafolio. Aquí encontrarás una colección de mis creaciones, proyectos y trabajos.</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <h2>💼 Proyectos</h2>
+        <ul>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Sección Video de YouTube -->
+    <section id="video">
+        <h2>🎥 Video</h2>
+        <p>Aquí tienes un video interesante relacionado con mis proyectos:</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID?controls=0&mute=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Sección Visor de PDF -->
+    <section id="pdf-viewer">
+        <h2>📄 Visor de PDF</h2>
+        <p>Aquí puedes ver mi currículum o algún documento importante en formato PDF.</p>
+        <div class="pdf-container">
+            <iframe src="mi-documento.pdf" width="100%" height="600px">
+                Tu navegador no soporta el visor de PDF. Puedes <a href="mi-documento.pdf" download>descargar el PDF aquí</a>.
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Sección Reproductor de Spotify -->
+    <section id="spotify">
+        <h2>🎵 Spotify</h2>
+        <p>Escucha mi última música en Spotify:</p>
+        <div class="spotify-player">
+            <iframe src="https://open.spotify.com/embed/track/TRACK_ID" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="gallery">
+        <h2>🖼️ Galería</h2>
+        <p>Aquí puedes ver algunas imágenes y vídeos de mis trabajos.</p>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 1">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 2">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 3">
+            <img src="https://via.placeholder.com/400x300" alt="Imagen 4">
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact">
+        <h2>✉️ Contacto</h2>
+        <p>Si deseas ponerte en contacto conmigo, por favor envíame un correo a <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>🎨 Mi Portafolio</h3>
+            <p>Gracias por visitar mi portafolio. Sígueme en mis redes sociales:</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mi Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
